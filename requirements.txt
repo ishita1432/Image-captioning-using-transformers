@@ -1,7 +1,7 @@
 Pillow==9.0.0
 PyYAML==6.0.1
 Requests==2.31.0
-streamlit==1.25.0
+streamlit==1.23.0
 torch==2.0.1
 tqdm==4.65.0
 transformers==4.35.0

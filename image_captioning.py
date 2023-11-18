@@ -28,6 +28,7 @@ def image_uploader():
     with st.form("uploader"):
         images = st.file_uploader("Upload Images",accept_multiple_files=True,type=["png","jpg","jpeg","jfif"])
         submitted = st.form_submit_button("Submit")
+        st.image(image, caption="Image from URL.", use_column_width=True)
         if submitted:
             predicted_captions = predict_step(images,False)
             for i,caption in enumerate(predicted_captions):
